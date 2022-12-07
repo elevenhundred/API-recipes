@@ -1,38 +1,115 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+ul,
+li,
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  text-shadow: 0px 4px #ddd6e8;
+  font-size: 45px;
+}
+
+h2 {
+  font-weight: bolder;
+}
+
+.header {
+  padding: 5px;
+  background-color: rgba(255, 253, 253, 0.5);
+  height: 98%;
+  width: 100%;
+  align-self: center;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 20px;
+  line-height: 18px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 0px;
+  margin-top: 10px;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  line-height: 18px;
+  margin-left: 2px;
+  margin-top: 10px;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+}
+
+.array {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 98%;
+  margin: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 0.4em 0.4em 0.8em;
+  margin: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: bolder;
+}
+
+li:hover {
+  background: #dcdde1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 5px;
 }
