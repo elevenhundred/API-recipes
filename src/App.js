@@ -55,14 +55,19 @@ export default function App() {
       </div>
       <div>
         <div className="array">
-          {myRecipes.map((element) => (
+          {myRecipes.length >1 ? 
+          myRecipes.map((element, index) => (
             <MyRecipeComponent
+              key={index}
               label={element.recipe.label}
               image={element.recipe.image}
               calories={element.recipe.calories}
               ingredients={element.recipe.ingredientLines}
             />
-          ))}
+          ))
+           : <p className="container">Ничего не найдено</p> 
+          }
+        
         </div>
       </div>
     </div>
